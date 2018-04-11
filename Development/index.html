@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/index.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <form method="post" action="submit/index.php" id="messageForm">
+            <label>Name:</label><br>
+            <input type="text" placeholder="name" name="name" id="name">
+            <label>Message:</label><br>
+            <input type="text" placeholder="message" name="msg" id="msg">
+            <input type="submit">
+        </form>
+        
+        <div class="gui98-window" style="display: none;">
+            <div class="titleBar">
+                <div class="title">
+                    <img src="" alt="window icon">
+                    <h3>Title</h3>
+                </div>
+                <div class="buttons">
+                    <button class="min">Minimize</button>
+                    <button class="max">Maximize</button>
+                    <button class="close">Close</button>
+                </div>
+            </div>
+            <div class="toolBar">
+                <ul>
+                    <li>
+                        File
+                    </li>
+                    <li>
+                        Edit
+                    </li>
+                    <li>
+                        View
+                    </li>
+                    <li>
+                        Go
+                    </li>
+                    <li>
+                        Favorites
+                    </li>
+                    <li>
+                        Help
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <a href="print/index.php">See the messages</a>
+        
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/ajax.js"></script>
+    </body>
+</html>

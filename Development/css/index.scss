@@ -1,0 +1,79 @@
+$windowColor : rgb(192,192,192);
+$windowShadow : rgb(128,128,128);
+$windowTitle : rgb(2,18,139);
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+} p {
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+}
+
+.gui98-window {
+    background: $windowColor;
+    width: 560px;
+    height: 480px;
+    padding: 2px;
+    border-top: 2px groove white;
+    border-left: 2px groove white;
+    border-bottom: 2px ridge $windowShadow;
+    border-right: 2px ridge $windowShadow;
+} .gui98-window {
+    .titleBar {
+        width: 100%;
+        height: 18px;
+        background: $windowTitle;
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    } .titleBar {
+        .title {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 18px;
+            margin-left: 2px;
+        } .title {
+            img {
+                height: 16px;
+                width: auto;
+                margin-right: 4px;
+            } h3 {
+                display: inline;
+                font-size: 12px;
+            }
+        } .buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 18px;
+            margin-right: 2px;
+        } .buttons {
+            button {
+                cursor: pointer;
+                width: 16px;
+                height: 14px;
+                background: $windowColor;
+                border: 0;
+                color: inherit;
+                font: inherit;
+                line-height: normal;
+                padding: 0;
+                -webkit-appearance: button; /* for input */
+                -webkit-user-select: none; /* for button */
+                -moz-user-select: none;
+                -ms-user-select: none;
+                text-indent: 16px;
+                white-space: nowrap;
+                overflow: hidden;
+            } button:nth-last-of-type(1) {
+                margin-left: 2px;
+            }
+        }
+    }
+}
