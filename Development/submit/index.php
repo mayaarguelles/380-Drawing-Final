@@ -4,6 +4,11 @@
         <?php 
             $msg = $_POST['msg'];
             $name = $_POST['name'];
+            if (empty($name)) {
+                $nums = rand(0,9999);
+                $nums_string = str_pad($nums, 6, '0', STR_PAD_LEFT);
+                $name = "guest_" . $nums_string;
+            }
             $msg = $msg . PHP_EOL;
             $t=time();
         

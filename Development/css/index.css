@@ -1,27 +1,43 @@
-/* line 5, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
-h1, h2, h3, h4, h5, h6 {
+/* line 6, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+body, html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden; }
+
+/* line 14, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+h1, h2, h3, h4, h5, h6, ul {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-smooth: never;
   -webkit-font-smoothing: none; }
 
-/* line 9, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+/* line 18, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
 p {
   font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
   font-smooth: never;
   -webkit-font-smoothing: none; }
 
-/* line 15, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+/* line 24, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
 .gui98-window {
+  z-index: 99999999999999999999999;
   background: silver;
-  width: 560px;
+  max-width: 480px;
+  width: 90%;
   height: 480px;
   padding: 2px;
   border-top: 2px groove white;
   border-left: 2px groove white;
   border-bottom: 2px ridge gray;
-  border-right: 2px ridge gray; }
+  border-right: 2px ridge gray;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
-/* line 25, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+/* line 42, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
 .gui98-window .titleBar {
   width: 100%;
   height: 18px;
@@ -30,9 +46,10 @@ p {
   display: flex;
   align-items: center;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 1px; }
 
-/* line 35, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+/* line 53, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
 .gui98-window .titleBar .title {
   display: flex;
   flex-direction: row;
@@ -40,18 +57,18 @@ p {
   height: 18px;
   margin-left: 2px; }
 
-/* line 42, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+/* line 60, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
 .gui98-window .titleBar .title img {
   height: 16px;
   width: auto;
   margin-right: 4px; }
 
-/* line 46, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+/* line 64, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
 .gui98-window .titleBar .title h3 {
   display: inline;
   font-size: 12px; }
 
-/* line 50, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+/* line 68, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
 .gui98-window .titleBar .buttons {
   display: flex;
   flex-direction: row;
@@ -59,7 +76,7 @@ p {
   height: 18px;
   margin-right: 2px; }
 
-/* line 57, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+/* line 75, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
 .gui98-window .titleBar .buttons button {
   cursor: pointer;
   width: 16px;
@@ -80,8 +97,420 @@ p {
   white-space: nowrap;
   overflow: hidden; }
 
-/* line 74, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+/* line 92, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
 .gui98-window .titleBar .buttons button:nth-last-of-type(1) {
   margin-left: 2px; }
+
+/* line 94, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .titleBar .buttons .min {
+  background-image: url("../img/gui98_min.png"); }
+
+/* line 96, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .titleBar .buttons .max {
+  background-image: url("../img/gui98_max.png"); }
+
+/* line 98, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .titleBar .buttons .close {
+  background-image: url("../img/gui98_close.png"); }
+
+/* line 102, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .toolBar {
+  width: 100%;
+  height: 22px;
+  background: silver;
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border-top: 2px groove white;
+  border-left: 2px groove white;
+  border-bottom: 1px solid gray;
+  border-right: 1px solid gray;
+  box-sizing: border-box;
+  z-index: 9999999999999999999999999; }
+
+/* line 117, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .toolBar ul {
+  display: flex;
+  align-items: center;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0; }
+
+/* line 126, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .toolBar ul li {
+  box-sizing: border-box;
+  border: 1px solid silver;
+  position: relative;
+  cursor: pointer;
+  display: inline;
+  font-size: 12px;
+  padding: 0 6px; }
+
+/* line 135, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .toolBar ul li span {
+  border-bottom: 1px solid black;
+  height: 13px;
+  display: inline-block; }
+
+/* line 139, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .toolBar ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: silver;
+  border-top: 2px groove white;
+  border-left: 2px groove white;
+  border-bottom: 2px ridge gray;
+  border-right: 2px ridge gray; }
+
+/* line 149, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .toolBar ul li li {
+  padding: 2px 16px;
+  margin-left: 1px 2px;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  font-size: 12px;
+  min-width: 96px; }
+
+/* line 157, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .toolBar ul li li:hover {
+  color: white;
+  background: #02128b; }
+
+/* line 160, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .toolBar ul li hr {
+  margin: 2px 0;
+  padding: 0; }
+
+/* line 164, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .toolBar ul li.active {
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white; }
+
+/* line 170, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .toolBar ul li.active ul {
+  display: block !important; }
+
+/* line 175, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content {
+  width: 100%;
+  flex: 1 1 auto; }
+
+/* line 178, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.default {
+  box-sizing: border-box;
+  background: white; }
+
+/* line 181, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat {
+  bacgkround: silver;
+  display: flex;
+  flex-direction: column; }
+
+/* line 186, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .tabs {
+  width: 100%;
+  height: 24px;
+  background: silver;
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative; }
+
+/* line 196, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .tabs .tab {
+  box-sizing: border-box;
+  padding: 0 4px;
+  min-width: 96px;
+  height: 100%;
+  margin-top: 1px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-left: 1px solid white;
+  border-top: 1px solid white;
+  border-right: 2px ridge gray;
+  text-align: center;
+  background: silver;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; }
+
+/* line 214, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .tabs .tab h4 {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  width: 100%; }
+
+/* line 219, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .tabs .tab h4:active {
+  border: 1px dotted black; }
+
+/* line 222, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .tabs .spacer {
+  flex: 1 1 auto;
+  height: 100%;
+  border-bottom: 1px solid white; }
+
+/* line 227, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface {
+  flex: 1 1 auto;
+  border-left: 1px solid white;
+  border-bottom: 2px ridge gray;
+  border-right: 2px ridge gray;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+/* line 236, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface .chatroom {
+  flex: 1 1 auto;
+  width: 100%;
+  display: flex; }
+
+/* line 240, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface .room {
+  box-sizing: border-box;
+  padding: 4px 48px 4px 12px;
+  flex: 2 1 auto;
+  background: blue;
+  margin-right: 12px;
+  margin-top: 4px;
+  margin-left: 8px;
+  overflow-y: scroll;
+  background: white;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 2px groove silver;
+  border-bottom: 2px groove silver;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif; }
+
+/* line 256, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface .room .message:nth-of-type(1) {
+  display: none; }
+
+/* line 258, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface .room ul {
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0;
+  display: flex;
+  flex-direction: column-reverse; }
+
+/* line 268, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface .room ul li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 2px; }
+
+/* line 273, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface .room ul li ol {
+  width: 100%;
+  margin-right: 24px;
+  list-style: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0; }
+
+/* line 283, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface .room ul li ol .name {
+  color: red;
+  display: inline-block;
+  font-weight: bold; }
+
+/* line 287, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface .room ul li ol .name.you {
+  color: blue; }
+
+/* line 289, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface .room ul li ol .msgBody {
+  display: inline; }
+
+/* line 291, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface .room ul li ol .date {
+  text-align: right;
+  font-size: 10px;
+  position: absolute;
+  right: -44px;
+  top: 0; }
+
+/* line 297, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface .room ul li ol .time {
+  text-align: right;
+  font-size: 10px;
+  position: absolute;
+  right: -44px;
+  top: 10px; }
+
+/* line 307, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface .people {
+  flex: 1 1 auto;
+  margin-right: 12px;
+  margin-top: 4px;
+  display: flex;
+  flex-direction: column; }
+
+/* line 314, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface .people h6 {
+  height: 24px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center; }
+
+/* line 320, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface .people ul {
+  background: white;
+  flex: 1 1 auto;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 2px groove silver;
+  border-bottom: 2px groove silver;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0;
+  display: block; }
+
+/* line 334, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface .people ul li {
+  box-sizing: border-box;
+  width: 100%;
+  list-style: none;
+  font-size: 14px;
+  background: #082567;
+  color: white;
+  margin: 0;
+  padding: 2px 4px; }
+
+/* line 344, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface .people ul li img {
+  margin-right: 4px; }
+
+/* line 349, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface form {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: flex; }
+
+/* line 354, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface form fieldset {
+  flex: 1 1 auto;
+  padding: 0;
+  margin: 0;
+  margin-left: 4px;
+  border: none; }
+
+/* line 360, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface form input {
+  box-sizing: border-box;
+  display: block;
+  padding: 2px;
+  margin: 0 4px;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 2px groove silver;
+  border-bottom: 2px groove silver; }
+
+/* line 369, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface form button {
+  margin-left: 8px;
+  margin-right: 12px; }
+
+/* line 372, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.gui98-window .content.chat .interface form textarea {
+  box-sizing: border-box;
+  display: block;
+  padding: 2px;
+  margin: 0 4px;
+  resize: none;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 2px groove silver;
+  border-bottom: 2px groove silver;
+  width: 100%; }
+
+/* line 387, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.accents {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: url("../img/bg.gif");
+  background-size: cover; }
+
+/* line 396, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.accents img {
+  position: absolute; }
+
+/* line 400, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.player {
+  z-index: 9999999999999999999;
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  width: 206px;
+  height: 99px;
+  background: url("../img/Music.png"); }
+
+/* line 408, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.player div {
+  cursor: pointer; }
+
+/* line 410, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.pause {
+  position: absolute;
+  left: 94px;
+  bottom: 7px;
+  width: 19px;
+  height: 19px;
+  background: url("../img/pauseOn.png"); }
+
+/* line 417, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.stop {
+  position: absolute;
+  left: 116px;
+  bottom: 7px;
+  width: 19px;
+  height: 19px;
+  background: url("../img/stopOn.png"); }
+
+/* line 424, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.play {
+  position: absolute;
+  left: 137px;
+  bottom: 7px;
+  width: 19px;
+  height: 19px;
+  background: url("../img/playOn.png"); }
+
+/* line 431, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.pause.off {
+  background: url("../img/pauseOff.png"); }
+
+/* line 433, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.stop.off {
+  background: url("../img/StopOff.png"); }
+
+/* line 435, /Users/maya/Desktop/school/MAMP/380-final-test/css/index.scss */
+.play.off {
+  background: url("../img/playOff.png"); }
 
 /*# sourceMappingURL=index.css.map */
