@@ -1,0 +1,16 @@
+/* line 1, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-one/css/style.scss */
+body, html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+/* line 8, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-one/css/style.scss */
+canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+/*# sourceMappingURL=style.css.map */

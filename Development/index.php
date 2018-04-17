@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link href="css/index.css" type="text/css" rel="stylesheet">
         <?php
         $myfile = fopen("submit/messages.txt", "r") or die("Unable to open file!");
@@ -11,39 +13,8 @@
     </head>
     <body>
         <div class="accents">
-            <img src="img/accents/1.gif">
-            <img src="img/accents/1.gif">
-            <img src="img/accents/1.gif">
-            <img src="img/accents/12%20copy.gif">
-            <img src="img/accents/12-2.gif">
-            <img src="img/accents/12.gif">
-            <img src="img/accents/18.gif">
-            <img src="img/accents/2.gif">
-            <img src="img/accents/28.gif">
-            <img src="img/accents/3d_underconstruction01_darkbg.gif">
-            <img src="img/accents/6.gif">
-            <img src="img/accents/72.gif">
-            <img src="img/accents/8.gif">
-            <img src="img/accents/8d577004-e68e-41d0-ba57-c58397137c81.gif">
-            <img src="img/accents/angel_0008.gif">
-            <img src="img/accents/angelstaranimmirror.gif">
-            <img src="img/accents/anivalangel.gif">
-            <img src="img/accents/antimoron.gif">
-            <img src="img/accents/candlerose.gif">
-            <img src="img/accents/construction-1.gif">
-            <img src="img/accents/construction-3.gif">
-            <img src="img/accents/construction.gif">
-            <img src="img/accents/dovec.gif">
-            <img src="img/accents/ICON-CONSTRUCTION.gif">
-            <img src="img/accents/Images_3d_email.gif">
-            <img src="img/accents/kanim.gif">
-            <img src="img/accents/nbirdr.gif">
-            <img src="img/accents/new3d.gif">
-            <img src="img/accents/sp.gif">
-            <img src="img/accents/under_construction.gif">
-            <img src="img/accents/Under_Construction_neon_sign_prv.gif">
         </div>
-        <div class="gui98-window">
+        <div class="gui98-window chatinterface">
             <div class="titleBar">
                 <div class="title">
                     <img src="img/chat_icon.png" alt="window icon">
@@ -192,6 +163,122 @@
                         <button type="submit">Send</button>
                     </form>
                 </div>
+            </div>
+        </div>
+        
+        <div class="gui98-window folder">
+            <div class="titleBar">
+                <div class="title">
+                    <img src="img/chat_icon.png" alt="window icon">
+                    <h3>Folder</h3>
+                </div>
+                <div class="buttons">
+                    <button class="min">Minimize</button>
+                    <button class="max">Maximize</button>
+                    <button class="close">Close</button>
+                </div>
+            </div>
+            <div class="toolBar">
+                <ul>
+                    <li>
+                        <span>F</span>ile
+                        <ul>
+                            <li>
+                                New window
+                            </li>
+                            <li>
+                                New folder
+                            </li>
+                            <li>
+                                Open
+                            </li>
+                            <li>
+                                Print
+                            </li>
+                            <li>
+                                Close
+                            </li>
+                            <hr>
+                            <li>
+                                Move to trash
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>E</span>dit
+                        <ul>
+                            <li>
+                                Undo
+                            </li>
+                            <li>
+                                Redo
+                            </li>
+                            <hr>
+                            <li>
+                                Cut
+                            </li>
+                            <li>
+                                Copy
+                            </li>
+                            <li>
+                                Paste
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>V</span>iew
+                        <ul>
+                            <li>
+                                Save
+                            </li>
+                            <li>
+                                Save as...
+                            </li>
+                            <li>
+                                Close
+                            </li>
+                            <hr>
+                            <li>
+                                Print
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>G</span>o
+                    </li>
+                    <li>
+                        F<span>a</span>vorites
+                    </li>
+                    <li>
+                        <span>H</span>elp
+                    </li>
+                </ul>
+            </div>
+            <div class="content default folder">
+                <a href="drawing-one/" class="item">
+                    <img src="img/accents/drawing1-preview.png">
+                    <h6>drawing-1.html</h6>
+                </a>
+                <a href="" class="item">
+                    <img src="img/accents/candlerose.gif">
+                    <h6>file.jpeg</h6>
+                </a>
+                <a href="" class="item">
+                    <img src="img/accents/candlerose.gif">
+                    <h6>file.jpeg</h6>
+                </a>
+                <a href="" class="item">
+                    <img src="img/accents/candlerose.gif">
+                    <h6>file.jpeg</h6>
+                </a>
+                <a href="" class="item">
+                    <img src="img/accents/candlerose.gif">
+                    <h6>file.jpeg</h6>
+                </a>
+                <a href="" class="item">
+                    <img src="img/accents/candlerose.gif">
+                    <h6>file.jpeg</h6>
+                </a>
             </div>
         </div>
         

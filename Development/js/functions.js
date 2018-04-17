@@ -2,7 +2,7 @@ var depthimg;
 var posx;
 var posy;
 var preview = false;
-var strength = 15;
+var strength = 11;
 
 // Randomize depths and positions of accent images
 $('.accents img').each( function() {

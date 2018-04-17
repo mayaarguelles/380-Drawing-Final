@@ -14,7 +14,7 @@
         
             $file = "messages.txt";
             $oldContents = file_get_contents($file);
-            $fr = fopen($file, "w") or die("Unable to open file!");
+            $fr = fopen($file, "w+") or die("Unable to open file!");
             fwrite($fr, date("m/d/Y",$t));
             fwrite($fr, "**NEXT**");
             fwrite($fr, date("g:i A", $t));

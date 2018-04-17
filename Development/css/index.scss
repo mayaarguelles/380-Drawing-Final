@@ -19,6 +19,25 @@ h1,h2,h3,h4,h5,h6,ul {
     font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
     font-smooth: never;
     -webkit-font-smoothing: none;
+} ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+}
+::-moz-placeholder { /* Firefox 19+ */
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+}
+:-ms-input-placeholder { /* IE 10+ */
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+}
+:-moz-placeholder { /* Firefox 18- */
+    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
 }
 
 .gui98-window {
@@ -35,8 +54,13 @@ h1,h2,h3,h4,h5,h6,ul {
     display: flex;
     flex-direction: column;
     position: absolute;
+} .gui98-window.folder {
     top: 50%;
-    left: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+} .gui98-window.chatinterface {
+    top: 50%;
+    left: 75%;
     transform: translate(-50%, -50%);
 } .gui98-window {
     .titleBar {
@@ -141,6 +165,7 @@ h1,h2,h3,h4,h5,h6,ul {
                     position: absolute;
                     top: 100%;
                     left: 0;
+                    width: auto;
                     background: $windowColor;
                     border-top: 2px groove white;
                     border-left: 2px groove white;
@@ -148,11 +173,12 @@ h1,h2,h3,h4,h5,h6,ul {
                     border-right: 2px ridge $windowShadow;
                 } li {
                     padding: 2px 16px;
-                    margin-left: 1px 2px;
+                    margin: 1px 2px;
                     position: relative;
                     cursor: pointer;
                     display: block;
                     font-size: 12px;
+                    width: auto;
                     min-width: 96px;
                 } li:hover {
                     color: white;
@@ -178,6 +204,44 @@ h1,h2,h3,h4,h5,h6,ul {
     } .content.default {
         box-sizing: border-box;
         background: white;
+        border-top: 1px solid $windowShadow;
+        border-left: 1px solid $windowShadow;
+        border-right: 2px groove $windowColor;
+        border-bottom: 2px groove $windowColor;
+    } .content.folder {
+        padding: 12px;
+    } .content.folder {
+        .item {
+            text-decoration: none;
+            color: inherit;
+            font-style: inherit;
+            font-weight: inherit;
+            width: 64px;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            margin: 10px;
+        } .item {
+            img {
+                width: auto;
+                height: auto;
+                max-width: 48px;
+                max-height: 48px;
+            } h6 {
+                margin: 0;
+                padding: 0;
+                font-weight: normal;
+                font-size: 14px;
+                text-align: center;
+                padding: 1px;
+                border: 1px solid transparent;
+            }
+        } .item:active {
+            h6 {
+                border: 1px dotted black;
+            }
+        }
     } .content.chat {
         bacgkround: $windowColor;
         display: flex;
@@ -366,6 +430,11 @@ h1,h2,h3,h4,h5,h6,ul {
                     border-left: 1px solid $windowShadow;
                     border-right: 2px groove $windowColor;
                     border-bottom: 2px groove $windowColor;
+                    padding: 4px;
+                    margin-bottom: 4px;
+                    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+                    font-smooth: never;
+                    -webkit-font-smoothing: none;
                 } button {
                     margin-left: 8px;
                     margin-right: 12px;
@@ -380,6 +449,10 @@ h1,h2,h3,h4,h5,h6,ul {
                     border-right: 2px groove $windowColor;
                     border-bottom: 2px groove $windowColor;
                     width: 100%;
+                    padding: 4px;
+                    font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
+                    font-smooth: never;
+                    -webkit-font-smoothing: none;
                 }
             }
         }
