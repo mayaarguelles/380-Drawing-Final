@@ -1,0 +1,123 @@
+/* line 1, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-two/css/pockets.scss */
+body, html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  letter-spacing: 0.6px;
+  line-height: 1.4;
+  background: #f4c5d4;
+  color: #0d4631;
+  cursor: url("../../img/cursor.png"), auto !important;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  -webkit-font-smoothing: none; }
+
+/* line 16, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-two/css/pockets.scss */
+a {
+  color: #0d4631;
+  font-smoothing: never;
+  letter-spacing: 1px;
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  position: absolute;
+  left: 12px;
+  top: 8px;
+  z-index: 99999999999999; }
+
+/* line 29, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-two/css/pockets.scss */
+h6 {
+  position: absolute;
+  font-weight: 400; }
+
+/* line 32, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-two/css/pockets.scss */
+h6:before {
+  content: '';
+  position: absolute;
+  background: #0d4631;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transition: transform 0.3s; }
+
+/* line 42, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-two/css/pockets.scss */
+h6:hover:before {
+  content: '';
+  position: absolute;
+  background: #0d4631;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(1); }
+
+/* line 53, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-two/css/pockets.scss */
+#water {
+  position: absolute;
+  bottom: 112px; }
+
+/* line 56, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-two/css/pockets.scss */
+#touch {
+  position: absolute;
+  bottom: 60px;
+  left: 28px; }
+
+/* line 60, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-two/css/pockets.scss */
+#off {
+  position: absolute;
+  bottom: 20px;
+  left: 80px; }
+
+/* line 66, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-two/css/pockets.scss */
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0; }
+
+/* line 73, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-two/css/pockets.scss */
+#left {
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+/* line 80, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-two/css/pockets.scss */
+#right {
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+/* line 87, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-two/css/pockets.scss */
+.tamagotchi {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+/* line 94, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-two/css/pockets.scss */
+#overlay {
+  position: relative; }
+
+/* line 96, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-two/css/pockets.scss */
+#screen {
+  position: absolute;
+  left: 50%;
+  top: 132px;
+  width: 132px;
+  height: 126px;
+  background: #0d4631;
+  transform: translateX(-50%); }
+
+/* line 106, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-two/css/pockets.scss */
+video {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+
+/*# sourceMappingURL=pockets.css.map */

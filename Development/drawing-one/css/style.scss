@@ -1,0 +1,35 @@
+body,html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background: #0e4632;
+    overflow: hidden;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+img {
+    display: block;
+    width: 10vw;
+}
+
+video {
+}
+
+a {
+    color: #f4c5d4;
+    font-smoothing: never;
+    letter-spacing: 1px;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    left: 12px;
+    top: 8px;
+}

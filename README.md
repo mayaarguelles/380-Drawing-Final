@@ -1,5 +1,6 @@
 # 380 Drawing | Final Project
 A project by Maya Arguelles for [380 Drawing on the Web](https://cs.nyu.edu/courses/spring18/CSCI-UA.0380-002/).
+[Project link](https://i6.cims.nyu.edu/~ga1110/380_drawing/projects/final/)
 
 # Project Outline
 In this project, I want to use the visual language of the digital age to highlight our human relationships with technology. I want to stray away from achieving photorealistic results with artificial means, and instead, embrace and expose the means of production. I want the project to feel unabashedly digital, but still intimate, personal, and familiar.

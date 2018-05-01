@@ -1,0 +1,34 @@
+/* line 1, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-one/css/style.scss */
+body, html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: #0e4632;
+  overflow: hidden; }
+
+/* line 10, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-one/css/style.scss */
+canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+/* line 18, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-one/css/style.scss */
+img {
+  display: block;
+  width: 10vw; }
+
+/* line 26, /Users/maya/Desktop/school/MAMP/380-final-test/drawing-one/css/style.scss */
+a {
+  color: #f4c5d4;
+  font-smoothing: never;
+  letter-spacing: 1px;
+  font-size: 10px;
+  font-family: Arial, sans-serif;
+  position: fixed;
+  left: 12px;
+  top: 8px; }
+
+/*# sourceMappingURL=style.css.map */

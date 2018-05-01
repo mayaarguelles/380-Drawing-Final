@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
+        <title>𝖄 𝖔 𝖚 &nbsp; 𝖆 𝖗 𝖊 &nbsp; 𝖆 𝖑 𝖔 𝖓 𝖊</title>
         <link href="css/index.css" type="text/css" rel="stylesheet">
         <?php
         $myfile = fopen("submit/messages.txt", "r") or die("Unable to open file!");
@@ -12,95 +13,56 @@
         ?>
     </head>
     <body>
-        <div class="accents">
-        </div>
-        <div class="gui98-window chatinterface">
-            <div class="titleBar">
+        <header class="toolbar">
+            <ul>
+                <li><img src="img/apple.png"></li>
+                <li><u>F</u>ile</li>
+                <li><u>E</u>dit</li>
+                <li><u>V</u>iew</li>
+            </ul>
+            <ul>
+                <li>1:06 AM</li>
+                <li><img src="img/apps.png"></li>
+            </ul>
+        </header>
+        
+        <section class="desktop">
+            <a class="item" id="drive-icon">
+                <img src="img/drive.png">
+                <h6>Drive</h6>
+            </a>
+            <a href="" class="item">
+                <img src="img/trash.png">
+                <h6>Trash</h6>
+            </a>
+            <a class="item" id="folder-icon">
+                <img src="img/folder.png">
+                <h6>Open Me</h6>
+            </a>
+            <a href="" class="item" id="music-icon">
+                <img src="img/music.png">
+                <h6>Music</h6>
+            </a>
+            <a class="item" id="chat-icon">
+                <img src="img/chat.png">
+                <h6>Messenger</h6>
+            </a>
+        </section>
+        
+        <img src="img/alone.gif" id="alone">
+        
+        
+        <div class="window chatinterface" id="chat">
+            <div class="titleBar" id="chatbar">
+                <img src="img/window-L.png">
+                <spacer></spacer>
                 <div class="title">
-                    <img src="img/chat_icon.png" alt="window icon">
-                    <h3>Chat</h3>
+                    <h3>Messenger</h3>
                 </div>
-                <div class="buttons">
-                    <button class="min">Minimize</button>
-                    <button class="max">Maximize</button>
-                    <button class="close">Close</button>
-                </div>
-            </div>
-            <div class="toolBar">
-                <ul>
-                    <li>
-                        <span>F</span>ile
-                        <ul>
-                            <li>
-                                Save
-                            </li>
-                            <li>
-                                Save as...
-                            </li>
-                            <li>
-                                Close
-                            </li>
-                            <hr>
-                            <li>
-                                Print
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span>E</span>dit
-                        <ul>
-                            <li>
-                                Save
-                            </li>
-                            <li>
-                                Save as...
-                            </li>
-                            <li>
-                                Close
-                            </li>
-                            <hr>
-                            <li>
-                                Print
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span>V</span>iew
-                        <ul>
-                            <li>
-                                Save
-                            </li>
-                            <li>
-                                Save as...
-                            </li>
-                            <li>
-                                Close
-                            </li>
-                            <hr>
-                            <li>
-                                Print
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span>G</span>o
-                    </li>
-                    <li>
-                        F<span>a</span>vorites
-                    </li>
-                    <li>
-                        <span>H</span>elp
-                    </li>
-                </ul>
+                <spacer></spacer>
+                <img src="img/window-R.png">
             </div>
             <div class="content chat">
-                <div class="tabs">
-                    <div class="tab">
-                        <h4>Chat</h4>
-                    </div>
-                    <div class="spacer">
-                    </div>
-                </div>
                 <div class="interface">
                     <div class="chatroom">
                         <div class="room">
@@ -166,127 +128,109 @@
             </div>
         </div>
         
-        <div class="gui98-window folder">
-            <div class="titleBar">
+        <div class="window friends" id="friends">
+            <div class="titleBar" id="friendsbar">
+                <img src="img/window-L.png">
+                <spacer></spacer>
                 <div class="title">
-                    <img src="img/chat_icon.png" alt="window icon">
-                    <h3>Folder</h3>
+                    <h3>Friends</h3>
                 </div>
-                <div class="buttons">
-                    <button class="min">Minimize</button>
-                    <button class="max">Maximize</button>
-                    <button class="close">Close</button>
+                <spacer></spacer>
+                <img src="img/window-R.png">
+            </div>
+            <div class="content friends">
+                <h6>0/0 online</h6>
+                <div class="friendslist">
+                    You have no friends.
                 </div>
             </div>
-            <div class="toolBar">
-                <ul>
-                    <li>
-                        <span>F</span>ile
-                        <ul>
-                            <li>
-                                New window
-                            </li>
-                            <li>
-                                New folder
-                            </li>
-                            <li>
-                                Open
-                            </li>
-                            <li>
-                                Print
-                            </li>
-                            <li>
-                                Close
-                            </li>
-                            <hr>
-                            <li>
-                                Move to trash
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span>E</span>dit
-                        <ul>
-                            <li>
-                                Undo
-                            </li>
-                            <li>
-                                Redo
-                            </li>
-                            <hr>
-                            <li>
-                                Cut
-                            </li>
-                            <li>
-                                Copy
-                            </li>
-                            <li>
-                                Paste
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span>V</span>iew
-                        <ul>
-                            <li>
-                                Save
-                            </li>
-                            <li>
-                                Save as...
-                            </li>
-                            <li>
-                                Close
-                            </li>
-                            <hr>
-                            <li>
-                                Print
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span>G</span>o
-                    </li>
-                    <li>
-                        F<span>a</span>vorites
-                    </li>
-                    <li>
-                        <span>H</span>elp
-                    </li>
-                </ul>
+        </div>
+        
+        <div class="window folder" id="folder">
+            <div class="titleBar" id="folderbar">
+                <img src="img/window-L.png">
+                <spacer></spacer>
+                <div class="title">
+                    <h3>Open Me</h3>
+                </div>
+                <spacer></spacer>
+                <img src="img/window-R.png">
+            </div>
+            <div class="details">
+                <h6>3 items</h6>
+                <h6>26.2 MB on disk</h6>
+                <h6>224.6 MB available</h6>
             </div>
             <div class="content default folder">
                 <a href="drawing-one/" class="item">
-                    <img src="img/accents/drawing1-preview.png">
-                    <h6>drawing-1.html</h6>
+                    <img src="img/solipsism.png">
+                    <h6>solipsism.exe</h6>
                 </a>
-                <a href="" class="item">
-                    <img src="img/accents/candlerose.gif">
-                    <h6>file.jpeg</h6>
+                <a href="drawing-three/" class="item">
+                    <img src="img/spotless.png">
+                    <h6>spotlessmind.exe</h6>
                 </a>
-                <a href="" class="item">
-                    <img src="img/accents/candlerose.gif">
-                    <h6>file.jpeg</h6>
-                </a>
-                <a href="" class="item">
-                    <img src="img/accents/candlerose.gif">
-                    <h6>file.jpeg</h6>
-                </a>
-                <a href="" class="item">
-                    <img src="img/accents/candlerose.gif">
-                    <h6>file.jpeg</h6>
-                </a>
-                <a href="" class="item">
-                    <img src="img/accents/candlerose.gif">
-                    <h6>file.jpeg</h6>
+                <a href="drawing-two" class="item">
+                    <img src="img/pockets.png">
+                    <h6>inurpocket.exe</h6>
                 </a>
             </div>
         </div>
         
-        <div class="player">
-            <audio id="flowersmp3" autoplay="autoplay">
-                <source src="mp3/Flowers.mp3" type="audio/mpeg">
-                Your browser does not support embebdded audio.
-            </audio>
+        <div class="window terminal" id="terminal">
+            <div class="titleBar" id="terminalbar">
+                <img src="img/window-L.png">
+                <spacer></spacer>
+                <div class="title">
+                    <h3>Drive</h3>
+                </div>
+                <spacer></spacer>
+                <img src="img/window-R.png">
+            </div>
+            <div class="content terminal">
+                <h6>Looks like there's</h6>
+                <h6>nothing here.</h6>
+            </div>
+        </div>
+        
+        <div class="window player" id="music">
+            <div class="titleBar" id="musicbar">
+                <img src="img/window-L.png">
+                <spacer></spacer>
+                <div class="title">
+                    <h3>Music</h3>
+                </div>
+                <spacer></spacer>
+                <img src="img/window-R.png">
+            </div>
+            <div class="content player">
+                <audio id="bg" autoplay loop>
+                    <source src="audio/bg.mp3" type="audio/mpeg">
+                    Your browser does not support embebdded audio.
+                </audio>
+                <audio id="startup" autoplay>
+                    <source src="audio/startup.mp3" type="audio/mpeg">
+                    Your browser does not support embebdded audio.
+                </audio>
+                <div class="timer">
+                    <h6>0:00</h6>
+                    <div class="progress">
+                        <div class="progress-interior">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                    <h6>6:12</h6>
+                </div>
+                <div class="controls">
+                    <img src="img/cd.gif">
+                    <h6>
+                        <em>Now playing:</em> In the Air<br>
+                        <img src="img/play.png" id="play"><img src="img/pause.png" id="pause">
+                    </h6>
+                    <img src="img/volume.png">
+                </div>
+            </div>
+            
             <div class="pause off"></div>
             <div class="stop off"></div>
             <div class="play"></div>
@@ -295,7 +239,6 @@
         <script src="js/jquery-3.2.1.min.js"></script>
         <script src="js/ajax.js"></script>
         <script src="js/index.js"></script>
-        <script src="js/functions.js"></script>
         
         <?php 
         fclose($myfile);
